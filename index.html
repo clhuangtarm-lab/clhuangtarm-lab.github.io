@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>農業科技觀測站｜國際農業科技與植物科學新知</title>
+<meta name="description" content="農業科技觀測站整理國際農業科技、植物科學、植物保護、智慧農業、農業環境、食品科技、農業政策與產業動態，作為可搜尋與回查的正體中文農業科技知識庫。">
+<link rel="canonical" href="https://clhuangtarm-lab.github.io/">
+<meta property="og:title" content="農業科技觀測站｜國際農業科技與植物科學新知">
+<meta property="og:description" content="農業科技觀測站整理國際農業科技、植物科學、植物保護、智慧農業、農業環境、食品科技、農業政策與產業動態，作為可搜尋與回查的正體中文農業科技知識庫。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="農業科技觀測站">
+<meta property="og:url" content="https://clhuangtarm-lab.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="application-name" content="農業科技觀測站">
+<style>
+:root{--bg:#f7f8f6;--card:#fff;--ink:#1f2a22;--sub:#5c6b5f;--line:#e2e7de;
+  --accent:#2f7d4f;--accent-ink:#fff;--tag:#eef4ee;--warn:#b25a00;}
+@media (prefers-color-scheme:dark){:root{--bg:#151a16;--card:#1e251f;--ink:#e8efe8;--sub:#9fb0a2;
+  --line:#2c352d;--accent:#4faa72;--accent-ink:#0c110d;--tag:#26302a;--warn:#e0a458;}}
+:root[data-theme="light"]{--bg:#f7f8f6;--card:#fff;--ink:#1f2a22;--sub:#5c6b5f;--line:#e2e7de;
+  --accent:#2f7d4f;--accent-ink:#fff;--tag:#eef4ee;--warn:#b25a00;}
+:root[data-theme="dark"]{--bg:#151a16;--card:#1e251f;--ink:#e8efe8;--sub:#9fb0a2;
+  --line:#2c352d;--accent:#4faa72;--accent-ink:#0c110d;--tag:#26302a;--warn:#e0a458;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.75;}
+a{color:inherit;}
+header{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;}
+.bar{max-width:1000px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;}
+.brand{font-weight:800;font-size:19px;text-decoration:none;margin-right:auto;}
+.brand small{font-weight:500;color:var(--sub);font-size:12px;margin-left:8px;}
+nav a{color:var(--sub);text-decoration:none;font-size:14px;padding:4px 2px;border-bottom:2px solid transparent;}
+nav a:hover{color:var(--ink);}
+.search{display:flex;gap:6px;}
+.search input{padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);}
+.search button{padding:6px 12px;border:0;border-radius:8px;background:var(--accent);color:var(--accent-ink);cursor:pointer;font-size:14px;}
+main{max-width:1000px;margin:0 auto;padding:26px 20px 60px;}
+h1{font-size:26px;margin:0 0 6px;text-wrap:balance;}
+h2{font-size:19px;margin:26px 0 10px;}
+.lead{color:var(--sub);margin:0 0 20px;max-width:60ch;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:0 0 14px;}
+.card h3{margin:0 0 6px;font-size:17px;}
+.card h3 a{text-decoration:none;}
+.card h3 a:hover{color:var(--accent);}
+.meta{font-size:12.5px;color:var(--sub);display:flex;flex-wrap:wrap;gap:6px 12px;margin:6px 0;}
+.tag{display:inline-block;background:var(--tag);color:var(--sub);border-radius:999px;padding:2px 10px;font-size:12px;text-decoration:none;margin:2px 4px 2px 0;}
+.tag:hover{color:var(--ink);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+.article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px 30px;}
+.article p{margin:0 0 1em;}
+.article img.hero{width:100%;height:auto;border-radius:10px;margin:0 0 18px;}
+.article-html{line-height:1.85;}
+.article-html p{margin:0 0 1em;}
+.article-html img{max-width:100%;height:auto;display:block;margin:14px 0;border-radius:8px;}
+.article-html figure{margin:14px 0;}
+.article-html figcaption{font-size:13px;color:var(--sub);margin-top:4px;}
+.article-html a{color:var(--accent);text-decoration:underline;}
+.article-html blockquote{margin:0 0 1em;padding-left:14px;border-left:3px solid var(--line);color:var(--sub);}
+.src{font-size:13px;color:var(--sub);border-top:1px solid var(--line);margin-top:20px;padding-top:14px;}
+.empty{color:var(--sub);padding:30px 0;text-align:center;}
+.cardimg{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:10px;border:1px solid var(--line);}
+.cardimg.cover{object-fit:cover;}
+.cardimg.contain{object-fit:contain;background:var(--tag);}
+.hcard{display:grid;grid-template-columns:280px minmax(0,1fr);gap:18px;align-items:start;}
+.hcard .hthumb{display:block;}
+.hcard .hbody h3{margin-top:0;}
+.related{margin-top:30px;}
+.related h2{margin:0 0 12px;}
+.related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
+.rcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0;}
+.rcard .rthumb{display:block;}
+.rcard h3{margin:0;font-size:15px;line-height:1.5;}
+.rcard h3 a{text-decoration:none;}
+.rcard h3 a:hover{color:var(--accent);}
+.rcard .meta{margin:0;}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px;}
+.pager a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-decoration:none;min-width:0;}
+.pager a:hover{border-color:var(--accent);}
+.pager .dir{display:block;font-size:12.5px;color:var(--sub);}
+.pager .ttl{display:block;font-size:14.5px;line-height:1.5;}
+.pager .next{text-align:right;}
+.pager .spacer{display:block;}
+@media (max-width:720px){
+  .hcard{grid-template-columns:1fr;gap:10px;}
+  .related-grid{grid-template-columns:1fr;}
+  .pager{grid-template-columns:1fr;}
+  .pager .next{text-align:left;}
+  .pager .spacer{display:none;}
+}
+footer{max-width:1000px;margin:0 auto;padding:20px;color:var(--sub);font-size:12.5px;border-top:1px solid var(--line);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNWDFFSY3S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-DNWDFFSY3S");</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"農業科技觀測站","alternateName":"農業科技觀測","url":"https://clhuangtarm-lab.github.io/","inLanguage":"zh-Hant"}</script>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="/">農業科技觀測站 <small>國際農業科技情報</small></a>
+  <nav>
+    <a href="/">首頁</a>
+    <a href="/agri-tech-observatory/articles/">文章總覽</a>
+    <a href="/agri-tech-observatory/topics/">主題分類</a>
+  </nav>
+  <form class="search" action="/agri-tech-observatory/search/" method="get">
+    <input type="text" name="q" placeholder="關鍵字搜尋…" aria-label="搜尋">
+    <button>搜尋</button>
+  </form>
+</div></header>
+<main><h1>農業科技觀測站</h1><p class="lead"><strong>國際農業科技情報</strong><br>農業科技觀測站追蹤美國、日本、歐盟、韓國等地的農業科技、植物科學、植物保護、智慧農業、農業環境、食品科技、農業政策與產業動態，每週整理具研究與實務價值的新知，作為可搜尋、累積與回查的農業科技知識庫。完整文章收錄於本站的農業科技觀測資料庫。本站為個人研究與內容經營用途。</p><h2>最新公開文章</h2><div class="card hcard"><a class="hthumb" href="/agri-tech-observatory/article/510/" tabindex="-1"><img class="cardimg cover" src="/agri-tech-observatory/images/cards/510.webp" width="1672" height="941" alt="北海道農場為維持冬季雇用發展爆米花加工，業者稱去年銷售約100萬包" fetchpriority="high" decoding="async" onerror="this.parentNode.style.display='none'"></a><div class="hbody"><h3><a href="/agri-tech-observatory/article/510/">北海道農場為維持冬季雇用發展爆米花加工，業者稱去年銷售約100萬包</a></h3><div class="meta"><span>發布日 2026-11-07</span><span>x.com</span></div><p style="color:var(--sub);font-size:14px">日本北海道十勝的前田農產食品自2013年試種爆米花玉米、2016年推出商品，經歷地膜與乾燥技術調整後建立加工與通路。受訪者稱去年製造約118萬包、銷售約100萬包，爆米花事業營收約2億日圓；數據屬單一企業訪談，尚無獨立獲利或就業成效評估。…</p><div><a class="tag" href="/agri-tech-observatory/topic/g/">農村產業與六級產業化</a><a class="tag" href="/agri-tech-observatory/country/japan/">日本</a></div></div></div><div class="card hcard"><a class="hthumb" href="/agri-tech-observatory/article/509/" tabindex="-1"><img class="cardimg cover" src="/agri-tech-observatory/images/cards/509.webp" width="1672" height="941" alt="果樹施肥須看樹勢、根系與結果量，日本園藝專欄區分基肥與禮肥" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></a><div class="hbody"><h3><a href="/agri-tech-observatory/article/509/">果樹施肥須看樹勢、根系與結果量，日本園藝專欄區分基肥與禮肥</a></h3><div class="meta"><span>發布日 2026-11-07</span><span>t.co</span></div><p style="color:var(--sub);font-size:14px">日本家庭果樹園藝專欄整理多年生果樹施肥判斷：養分可能跨生長季儲存，肥料應依氮磷鉀成分、堆肥投入、樹齡與結果量調整，施用位置也需考慮吸收根分布。落葉果樹與常綠柑橘的施肥時序不同；內容為栽培經驗，不是定量田間試驗。…</p><div><a class="tag" href="/agri-tech-observatory/topic/e/">低碳農業與循環生物經濟</a><a class="tag" href="/agri-tech-observatory/country/global/">國際</a></div></div></div><div class="card hcard"><a class="hthumb" href="/agri-tech-observatory/article/507/" tabindex="-1"><img class="cardimg cover" src="/agri-tech-observatory/images/cards/507.webp" width="1672" height="941" alt="田間機器人與自駕曳引機各有取捨，荷蘭農民比較操作與地頭轉彎" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></a><div class="hbody"><h3><a href="/agri-tech-observatory/article/507/">田間機器人與自駕曳引機各有取捨，荷蘭農民比較操作與地頭轉彎</a></h3><div class="meta"><span>發布日 2026-11-07</span><span>Future Farming</span></div><p style="color:var(--sub);font-size:14px">荷蘭農民先於2025年整季使用AgXeed AgBot 5.115T2，再於2026年短期測試搭載iQuus自主駕駛套件的New Holland T6.180；兩者操作方式與地理圍籬不同，iQuus當時仍須人工處理地頭轉彎。報導屬單一農場案…</p><div><a class="tag" href="/agri-tech-observatory/topic/a/">智慧農業與資料治理</a><a class="tag" href="/agri-tech-observatory/country/netherlands/">荷蘭</a></div></div></div><div class="card hcard"><a class="hthumb" href="/agri-tech-observatory/article/500/" tabindex="-1"><img class="cardimg cover" src="/agri-tech-observatory/images/cards/500.webp" width="1672" height="941" alt="日本氣候調適對談：氣象預報、F1種子轉換與農地太陽能面臨不同限制" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></a><div class="hbody"><h3><a href="/agri-tech-observatory/article/500/">日本氣候調適對談：氣象預報、F1種子轉換與農地太陽能面臨不同限制</a></h3><div class="meta"><span>發布日 2026-11-07</span><span>JAcom 農業協同組合新聞</span></div><p style="color:var(--sub);font-size:14px">日本JAcom邀請東京大學江守正多與農業經營者八木岡努，討論天氣預報與農務決策、F1種子供應、耐熱品種育成與市場接受、稻田甲烷管理、有機與慣行農業的取捨，以及營農型太陽能和鈣鈦礦材料的應用條件。內容為受訪者的觀察與建議，非新田間比較試驗。…</p><div><a class="tag" href="/agri-tech-observatory/topic/b/">氣候韌性與風險管理</a><a class="tag" href="/agri-tech-observatory/country/japan/">日本</a></div></div></div><div class="card hcard"><a class="hthumb" href="/agri-tech-observatory/article/493/" tabindex="-1"><img class="cardimg cover" src="/agri-tech-observatory/images/cards/493.webp" width="1672" height="941" alt="苜蓿溫室試驗：未補鉀處理有50～74％吸收鉀來自非交換態土壤庫存" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></a><div class="hbody"><h3><a href="/agri-tech-observatory/article/493/">苜蓿溫室試驗：未補鉀處理有50～74％吸收鉀來自非交換態土壤庫存</a></h3><div class="meta"><span>發布日 2026-11-07</span><span>Phys.org 農業</span></div><p style="color:var(--sub);font-size:14px">以色列研究以三種農業土壤在溫室栽培苜蓿13個月，累計收穫16次。未補鉀處理的植株吸收鉀，有50～74％估計來自一般交換態鉀檢測未充分反映的非交換態礦物庫存；鉀較少的紅色砂土施鉀後生物量約增加13.5％。…</p><div><a class="tag" href="/agri-tech-observatory/topic/e/">低碳農業與循環生物經濟</a><a class="tag" href="/agri-tech-observatory/country/global/">國際</a></div></div></div><div class="card hcard"><a class="hthumb" href="/agri-tech-observatory/article/492/" tabindex="-1"><img class="cardimg cover" src="/agri-tech-observatory/images/cards/492.webp" width="1672" height="941" alt="36個小麥品種以RootBot量測土壤水分，密植增加前期用水" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></a><div class="hbody"><h3><a href="/agri-tech-observatory/article/492/">36個小麥品種以RootBot量測土壤水分，密植增加前期用水</a></h3><div class="meta"><span>發布日 2026-11-07</span><span>Phys.org 農業</span></div><p style="color:var(--sub);font-size:14px">澳洲昆士蘭大學於2024、2025年在Gatton比較36個小麥品種與不同播種密度，利用RootBot的電磁感應感測器及無人機資料，分析不同土層水分隨時間的變化。品種間的耗水時序與土層差異明顯，較高栽植密度通常增加前期冠層生長及用水。…</p><div><a class="tag" href="/agri-tech-observatory/topic/b/">氣候韌性與風險管理</a><a class="tag" href="/agri-tech-observatory/country/global/">國際</a></div></div></div><p style="text-align:center;margin:16px 0"><a class="tag" href="/agri-tech-observatory/articles/">查看全部 167 篇 →</a></p></main>
+<footer>農業科技觀測站 · 為個人研究與內容經營用途。<br>
+內容為AI翻譯並經人工複查後發布，聯絡信箱：clhuang.tarm@gmail.com。</footer>
+</body>
+</html>
